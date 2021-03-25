@@ -168,7 +168,7 @@ console.log('23' > '18');
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
-*/
+
 
 //5 falsy value: 0, '', undefined, null, NaN
 
@@ -191,3 +191,117 @@ if (height) {
 } else {
     console.log("Height is undefined");
 }
+
+
+const age = '18';
+if (age === 18) console.log('You just became an adult (strict)');
+
+if (age == 18) console.log('You just became an adult (loose)');
+
+const favorite = Number(prompt("What's your favorite number?"));
+
+console.log(favorite);
+
+if (favorite === 23) { // '23' == 23
+    console.log('Cool! 23 is an amazing number!');
+} else if (favorite === 7) {
+    console.log('7 is also a cool number');
+} else if (favorite === 9) {
+    console.log('9 is also a cool number')
+} else {
+    console.log('Number is not 23 or 7');
+}
+
+if (favorite !== 23) console.log('why not 23?');
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoodVision) {
+    console.log('Sarah is able to drive');
+} else {
+    console.log('Someone else should drive');
+}
+
+const isTired = true
+
+if (hasDriversLicense && hasGoodVision && isTired) {
+    console.log('Sarah is able to drive');
+} else {
+    console.log('Someone else should drive');
+}
+
+
+const day = 'wednesday';
+
+switch (day) {
+    case 'monday':
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log("Write code examples");
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log("Write code examples");
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === "sunday") {
+    console.log('Enjoy the weekend');
+} else console.log('Not a valid day!');
+
+
+3 + 4
+1991
+true && false && !false
+
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+const me = "Jonas";
+console.log(`I'm ${2037 - 1991} years old ${me}.`)
+
+
+const age = 18;
+// age >= 18 ? console.log(`I like to drink wine`) :
+//     console.log(`I like to drink water`);
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+*/
